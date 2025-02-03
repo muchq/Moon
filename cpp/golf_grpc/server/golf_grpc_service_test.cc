@@ -129,6 +129,8 @@ TEST(SERVICE_TEST, Peek) {
   EXPECT_TRUE(register_user_two_status.ok());
   EXPECT_TRUE(join_game_status_or_game.ok());
   EXPECT_TRUE(peek_status_or_game.ok());
-  
+
+  // TODO: Check peek game_state
+
   server->Shutdown();
 }
